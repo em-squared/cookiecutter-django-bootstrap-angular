@@ -1,0 +1,32 @@
+{
+  "name": "{{ cookiecutter.repo_name }}",
+  "version": "{{ cookiecutter.version }}",
+  "authors": [
+    "{{cookiecutter.author_name}} <{{cookiecutter.email}}>"
+  ],
+  "description": "{{cookiecutter.description}}",
+  "dependencies": {
+    "angularjs": "latest",
+    "angular-resource": "latest",
+    "angular-cookies": "latest",
+    "angular-mocks": "latest",
+    "angular-route": "latest",
+    "angular-sanitize": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "jquery.cookie": "latest",
+    "font-awesome": "latest"
+  },
+  "ignore": [
+    ".DS_Store",
+    ".git",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "component.json",
+    "node_modules",
+    "package.json",
+    "src",
+    "demo"
+  ]
+}

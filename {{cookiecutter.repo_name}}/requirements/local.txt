@@ -1,0 +1,3 @@
+-r testing.txt
+
+{% if cookiecutter.with_documentation == 'yes' %}Sphinx{% endif %}
