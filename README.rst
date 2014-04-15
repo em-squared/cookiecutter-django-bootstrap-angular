@@ -1,4 +1,4 @@
-cookiecutter-simple-django
+cookiecutter-django-bootstrap-angular
 ==========================
 
 A cookiecutter_ template for Django - Twitter Bootstrap - AngularJS.
