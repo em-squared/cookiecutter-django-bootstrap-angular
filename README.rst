@@ -1,7 +1,7 @@
 cookiecutter-simple-django
 ==========================
 
-A cookiecutter_ template for Django.
+A cookiecutter_ template for Django - Twitter Bootstrap - AngularJS.
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
@@ -31,12 +31,12 @@ Set up your virtualenv::
 Now run it against this repo::
 
     $ cd <your-workspace>
-    $ cookiecutter  https://github.com/marcofucci/cookiecutter-simple-django.git
+    $ cookiecutter  https://github.com/em-squared/cookiecutter-django-bootstrap-angular
 
 You'll be prompted for some questions, answer them, then it will create a Django project for you.
 
 
-**Warning**: After this point, change 'Marco Fucci', etc to your own information.
+**Warning**: After this point, change 'Your name', etc to your own information.
 
 It prompts you for questions. Answer them::
 
@@ -76,7 +76,7 @@ Create a GitHub repo and push it there::
     $ git init
     $ git add .
     $ git commit -m "first awesome commit!"
-    $ git remote add origin git@github.com:marcofucci/redditclone.git
+    $ git remote add origin git@github.com/em-squared/redditclone.git
     $ git push -u origin master
 
 **Note**: The ``requirements`` files don't define any package versions because it makes
@@ -136,7 +136,7 @@ Now, it's time to write the code!!!
 Not Exactly What You Want?
 ---------------------------
 
-This is what I want. *It might not be what you want.* Don't worry, you have options:
+This is what we want. *It might not be what you want.* Don't worry, you have options:
 
 Fork This
 ~~~~~~~~~~

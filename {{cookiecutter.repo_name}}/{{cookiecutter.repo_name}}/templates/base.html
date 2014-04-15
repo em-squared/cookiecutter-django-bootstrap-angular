@@ -1,10 +1,10 @@
 {% raw %}{% load staticfiles %}<!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="{{cookiecutter.project_name}}">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="description" content="{% block description %}{% endblock %}" />
     <meta name="keywords" content="{% block keywords %}{% endblock %}" />
-    <meta name="viewport" content="{% block viewport %}width=device-width"{% endblock %}>
+    <meta name="viewport" content="{% block viewport %}width=device-width{% endblock %}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>{% block title %}{{cookiecutter.project_name}}{% endblock title %}</title>
@@ -17,6 +17,9 @@
     <link rel="icon" type="image/gif" href="{% static 'img/favicon.gif' %}">
 
     {% block css %}
+    <link href="{% static 'bower_components/bootstrap/dist/css/bootsrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bower_components/bootstrap/dist/css/bootsrap-theme.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bower_components/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
     {% endblock %}
 
@@ -36,8 +39,33 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     {% block javascript %}
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+      <!-- JQuery -->
+      <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+      <script src="{% static 'bower_components/jquery/dist/jquery.min.map' %}"></script>
+      <script src="{% static 'bower_components/jquery.cookie/jquery.cookie.js' %}"></script>
+      
+      <!-- Angular -->
+      <script src="{% static 'bower_components/angular/angular.min.js' %}"></script>
+      <script src="{% static 'bower_components/angular/angular.min.js.map' %}"></script>
+      <script src="{% static 'bower_components/angular-resource/angular-resource.min.js' %}"></script>
+      <script src="{% static 'bower_components/angular-resource/angular-resource.min.js.map' %}"></script>
+      <script src="{% static 'bower_components/angular-route/angular-route.min.js' %}"></script>
+      <script src="{% static 'bower_components/angular-route/angular-route.min.js.map' %}"></script>
+      <script src="{% static 'bower_components/angular-sanitize/angular-sanitize.min.js' %}"></script>
+      <script src="{% static 'bower_components/angular-sanitize/angular-sanitize.min.js.map' %}"></script>
+      
+      <!-- Angular UI Router -->
+      <script src="{% static 'bower_components/angular-ui-router/release/angular-ui-router.min.js' %}"></script>
+
+      <!-- Angular Application Init -->
+      <script src="{% static 'js/app/app.js' %}"></script>
+      <script src="{% static 'js/app/config.js' %}"></script>
+      <script src="{% static 'js/app/controllers/index.js' %}"></script>
+
+      <!-- {{cookiecutter.project_name}} scripts -->
       <script src="{% static 'js/scripts.js' %}"></script>
+
     {% endblock javascript %}
   </body>
 </html>{% endraw %}

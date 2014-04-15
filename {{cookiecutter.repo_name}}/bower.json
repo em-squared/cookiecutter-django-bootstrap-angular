@@ -12,6 +12,7 @@
     "angular-mocks": "latest",
     "angular-route": "latest",
     "angular-sanitize": "latest",
+    "angular-ui-router": "latest",
     "bootstrap": "latest",
     "jquery": "latest",
     "jquery.cookie": "latest",
