@@ -1,6 +1,6 @@
 {% raw %}
 {% extends "base.html" %}{% load staticfiles %}
 {% block content %}
-  {% include "partials/index.html" %}
+  <div ng-include="'{{ STATIC_URL }}partials/index.html'"></div>
 {% endblock content %}
 {% endraw %}

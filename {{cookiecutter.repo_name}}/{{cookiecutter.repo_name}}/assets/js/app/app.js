@@ -6,5 +6,6 @@ angular.module('{{cookiecutter.project_name}}', [
   'ngRoute',
   'ngCookies',
   'ngResource',
-  'ngSanitize'
+  'ngSanitize',
+  'ui.router'
 ]);
