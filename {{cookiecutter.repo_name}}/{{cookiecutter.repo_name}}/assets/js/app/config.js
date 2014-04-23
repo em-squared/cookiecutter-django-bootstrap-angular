@@ -15,10 +15,3 @@ angular.module('{{cookiecutter.project_name}}').config(['$stateProvider', '$urlR
     // add other states here
 
 }]);
-
-//Setting HTML5 Location Mode
-angular.module('{{cookiecutter.project_name}}').config(['$locationProvider',
-    function($locationProvider) {
-        $locationProvider.hashPrefix('!');
-    }
-]);

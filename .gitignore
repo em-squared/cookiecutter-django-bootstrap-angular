@@ -1,5 +1,19 @@
+*~
+*.bck
+bin
+build
+_build
 *.log
 *.pot
 *.pyc
+develop-eggs
+*.egg
+*.EGG
+*.egg-info
+*.EGG-INFO
+eggs
+fake-eggs
 repo_name
-{{cookiecutter.repo_name}}/settings/local.py
+parts
+{{ cookiecutter.repo_name }}/static
+{{ cookiecutter.repo_name }}/assets/bower_components
