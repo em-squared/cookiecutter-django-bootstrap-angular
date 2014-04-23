@@ -3,6 +3,6 @@
 
 import shutil
 
-with open('./requirements/local.txt', 'r') as f:
+with open('./buildout.cfg', 'r') as f:
     if 'Sphinx' not in f.read():
         shutil.rmtree('./docs')
